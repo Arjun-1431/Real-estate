@@ -1,0 +1,210 @@
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-animation-name: left;
+          animation-name: left;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+          margin-top: 63px;
+          height: fit-content;
+}
+
+#right {
+  flex: 1;
+  background-color: black;
+  transition: 1s;
+  background-image: url("../Assets/maintainance.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.header > h2 {
+  margin: 0;
+  color: #3c6aff;
+  text-align: center;
+}
+
+.header > p {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.form > p {
+  text-align: right;
+}
+
+.form > p > a {
+  color: #000;
+  font-size: 14px;
+}
+
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: none;
+  border-bottom: 2px solid #d2e2ff;
+  background: linear-gradient(180deg, white, #f8faff);
+  border-radius: 4px;
+  font-family: sans-serif;
+  outline: 0;
+  transition: .2s;
+  margin-top: 20px;
+}
+
+/* .form-field:focus {
+  border-color: #0f7ef1;
+} */
+
+.form > .button {
+  padding: 12px 10px;
+  border: 0;
+  background: #3c6aff;
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  text-decoration: none;
+  margin-left: 6%;
+}
+
+.animation {
+-webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.a1 {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+.a2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.a3 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.a4 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.a5 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.a6 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 500px;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .form {
+      width: 90%; /* Adjust width for smaller screens */
+      margin: 36px 2px; /* Adjust margin for smaller screens */
+  }
+}
+@media screen and (max-width: 265px) {
+.form {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 55px 2px; /* Adjust margin for smaller screens */
+}
+}
+
+/* Responsive CSS for larger screens */
+@media screen and (min-width: 1200px) {
+  .form {
+      width: 60%; /* Adjust width for larger screens */
+      margin: 36px 2px; /* Adjust margin for larger screens */
+  }
+}

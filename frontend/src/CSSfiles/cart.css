@@ -1,0 +1,44 @@
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+
+  .cart1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Styles for the cart items */
+  .cart {
+    margin-bottom: 20px;
+  }
+  
+  /* Media query for screens smaller than 768px (typical mobile devices) */
+  @media screen and (max-width: 767px) {
+    /* Set flex-direction to column-reverse to stack items in reverse order */
+    .cart-container {
+      flex-direction: column-reverse;
+      width: 74%;
+    }
+  }
+
+
+  @media screen and (max-width: 1075px) {
+    /* Set flex-direction to column-reverse to stack items in reverse order */
+    .cart-container {
+      flex-direction: row;
+      width: 74%;
+    }
+  }
+
+
+  @media screen and (max-width: 1140px) {
+    /* Set flex-direction to column-reverse to stack items in reverse order */
+    .cart-container {
+      flex-direction: column-reverse;
+      
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.divmain{
+  width: 100%;
+  height: 500px;
+  
+}
+.divupper{
+  margin-top: 30px;
+}
+
+.smallcontainer{
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

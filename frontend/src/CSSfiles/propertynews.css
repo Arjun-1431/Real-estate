@@ -1,0 +1,25 @@
+.glyphicons {
+  position: absolute;
+  left: 350px;
+  top: 15px;
+}
+
+li:hover {
+  background-color: lightgrey;
+}
+
+.small-dark-title {
+  background: black;
+  color: white;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+.placehold {
+max-width: 100%
+}
+
+.bg-grey {
+  background: #f5f5f5;
+  padding: 0 10px 10px;
+}
